@@ -18,15 +18,17 @@ body {
     font-family: sans-serif;
 }
 
+li {
+    list-style-type: none;
+}
+
 .container {
     width: 80%;
     margin: 0 auto;
-    /* display: flex;
-    justify-content: center; */
 }
 
 img {
-    max-width: 80%;
+    max-width: 100%;
 }
 
 .discount {
@@ -38,22 +40,57 @@ img {
     left: 0;
     bottom: 85px;
     font-size: 0.8rem;
-    padding: 4px;
+    padding: 7px;
 }
 
 .sustainability {
     font-weight: bold;
     color: white;
-    background-color: #008000;
+    background-color: var(--green-sus);
     position: absolute;
     z-index: 101;
     bottom: 85px;
     font-size: 0.8rem;
-    padding: 4px;
+    padding: 7px;
 }
+
+.heart {
+    font: 1.2rem;
+    color: black;
+    background-color: white;
+    padding: 15px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+
 
 /* HEADER */
 
+header {
+    background-color: var(--header-color);
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+.menu {
+    display: flex;
+}
+
+.navigation {
+    color: white;
+    font-weight: bold;
+    display: flex;
+}
+
+.boolean-logo {
+    width: 50%;
+}
+
+ul.navigation li {
+    margin-right: 10px;
+}
 
 /* MAIN */
 
@@ -91,18 +128,16 @@ img {
 }
 
 .sustainability1 {
-    left: 42px;
+    left: 48px;
 }
 
+
 .photo1 {
-    position: relative;
-    z-index: 10;
+    /* position: relative;
+    z-index: 10; */
 }
 
 .photo2 {
-    /* position: absolute;
-    top: 0;
-    left: 0; */
     display: none;
 }
 
@@ -112,6 +147,14 @@ img {
 
 .col:hover .photo2 {
     display: inline-block;
+}
+
+.sustainability2 {
+    left: 0;
+}
+
+.heart:hover {
+    color: red;
 }
 
 /* FOOTER */
