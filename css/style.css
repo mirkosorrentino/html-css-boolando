@@ -1,0 +1,29 @@
+/* RESET  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --green-sus: #008000;
+    --header-color: #FF6900;
+    --footer-color: #1A1A1A;
+}
+
+/* COMMON */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+/* HEADER */
+
+
+/* MAIN */
+
+
+/* FOOTER */
