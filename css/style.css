@@ -14,10 +14,42 @@
 
 /* COMMON */
 
+body {
+    font-family: sans-serif;
+}
+
 .container {
     width: 80%;
     margin: 0 auto;
-    display: flex;
+    /* display: flex;
+    justify-content: center; */
+}
+
+img {
+    max-width: 80%;
+}
+
+.discount {
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    position: absolute;
+    z-index: 101;
+    left: 0;
+    bottom: 85px;
+    font-size: 0.8rem;
+    padding: 4px;
+}
+
+.sustainability {
+    font-weight: bold;
+    color: white;
+    background-color: #008000;
+    position: absolute;
+    z-index: 101;
+    bottom: 85px;
+    font-size: 0.8rem;
+    padding: 4px;
 }
 
 /* HEADER */
@@ -25,5 +57,61 @@
 
 /* MAIN */
 
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.col {
+    width: calc(100%/3 - 40px/3);
+    position: relative;
+
+    /* debug */
+    border: 2px solid black;
+    min-height: 100px;
+}
+
+.brand {
+    font-size: 0.8rem;
+}
+
+.article {
+    text-transform: uppercase;
+}
+
+.price {
+    color: red;
+    font-size: 0.8rem;
+}
+
+.not-discounted-price {
+    text-decoration: line-through;
+    color: black;
+}
+
+.sustainability1 {
+    left: 42px;
+}
+
+.photo1 {
+    position: relative;
+    z-index: 10;
+}
+
+.photo2 {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    display: none;
+}
+
+.col:hover .photo1 {
+    display: none;
+}
+
+.col:hover .photo2 {
+    display: inline-block;
+}
 
 /* FOOTER */
